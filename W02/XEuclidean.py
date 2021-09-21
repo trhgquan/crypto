@@ -24,4 +24,4 @@ class XEuclidean:
     try:
       print(a, b, self.extended_gcd(a, b)[0], self.inverse_modulo(a, b), sep=',')
     except Exception:
-      print(a, b, self.extended_gcd(a, b)[0], 'fail')
+      print(a, b, self.extended_gcd(a, b)[0], 'fail', sep=',')
