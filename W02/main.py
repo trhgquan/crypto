@@ -7,7 +7,7 @@ def main():
   # b = int(input('b = '))
 
   # try:
-  #  XEuclidean().solve(a, b)
+  #  XEuclidean().solve_plain(a, b)
   # except Exception as message:
   #  print(message)
 
