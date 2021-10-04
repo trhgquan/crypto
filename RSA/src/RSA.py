@@ -5,8 +5,13 @@ class RSA:
   def generate(self, p, q):
     n = p * q
     phi = (p - 1) * (q - 1)
+    
+    # This should be careful, I don't want to use any lib to create random int
+    # but d should be in [1, n] and BIG ENOUGH.
     d = (p + q) // 2
+
     e = XEuclidean().inverse_modulo(d, phi)
+    
     return (n, e, d)
 
   def encrypt(self, message, public_key, n):

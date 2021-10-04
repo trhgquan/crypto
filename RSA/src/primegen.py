@@ -38,12 +38,3 @@ class PrimeGen:
       if d2 >= expected_length: break
 
     return p1
-
-def main():
-  s = int(input('Seed s = '))
-  n = int(input('Max digits n = '))
-
-  print(PrimeGen(s).create(n))
-
-if __name__ == '__main__':
-  main()
