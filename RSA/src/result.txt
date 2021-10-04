@@ -1,0 +1,1 @@
+Seed s = Max digits n = 
