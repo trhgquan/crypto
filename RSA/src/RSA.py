@@ -5,13 +5,14 @@ class RSA:
   def generate(self, p, q):
     n = p * q
     phi = (p - 1) * (q - 1)
-    
-    # This should be careful, I don't want to use any lib to create random int
-    # but d should be in [1, n] and BIG ENOUGH.
-    d = (p + q) // 2
 
-    e = XEuclidean().inverse_modulo(d, phi)
-    
+    # Given that e should be in (1, phi) and coprime with phi.
+    # Since p and q are primes, phi = (p - 1) * (q - 1) will even
+    # and (p + q) // 2 will be an odd. Therefore, GCD((p + q) // 2, phi) = 1
+    e = (p + q) // 2
+
+    d = XEuclidean().inverse_modulo(e, phi)
+
     return (n, e, d)
 
   def encrypt(self, message, public_key, n):
@@ -24,9 +25,4 @@ class RSA:
     return [ord(c) for c in message]
 
   def decode(self, plain):
-    result = ''
-
-    for c in plain:
-      result += chr(c)
-
-    return result
+    return ''.join([chr(c) for c in plain])

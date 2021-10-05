@@ -5,7 +5,7 @@ def main():
 
   # with open('test.txt', 'r') as file:
   #   message = file.read()
-  #   for c in RSA().encrypt(message, d, n):
+  #   for c in RSA().encrypt(message, e, n):
   #     print(c, end=' ')
 
   # with open('encrypted.txt', 'r') as file:
