@@ -6,12 +6,12 @@ class RSA:
     n = p * q
     phi = (p - 1) * (q - 1)
 
-    # Given that e should be in (1, phi) and coprime with phi.
+    # Given that d should be in (1, phi) and coprime with phi.
     # Since p and q are primes, phi = (p - 1) * (q - 1) will even
     # and (p + q) // 2 will be an odd. Therefore, GCD((p + q) // 2, phi) = 1
-    e = (p + q) // 2
+    d = (p + q) // 2
 
-    d = XEuclidean().inverse_modulo(e, phi)
+    e = XEuclidean().inverse_modulo(d, phi)
 
     return (n, e, d)
 
