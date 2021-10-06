@@ -1,5 +1,8 @@
-# CS155 - Introduction to Cryptography
+# CS155 - Nhập môn mã hóa - mật mã
 
-Some implementations of crypto algorithms in CS155
+Cài đặt thuật & tóm tắt lí thuyết.
 
-VNUHCM - University of Science, Fall 2021.
+## Chủ đề
+1. RSA
+
+VNUHCM - US, mùa Thu năm 2021.
