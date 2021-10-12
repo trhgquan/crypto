@@ -2,10 +2,10 @@ from elgamal import Elgamal
 
 def main():
     # Generate key for encryption / decryption
-    # p, g, d, e = Elgamal().generate_key(269)
-    # print(p, g, d, e, sep = ', ')
+    p, g, d, e = Elgamal().generate_key(269)
+    print(p, g, d, e, sep = ', ')
 
-    p, g, d, e = 269, 237, 166, 89
+    # p, g, d, e = 269, 237, 166, 89
 
     # Encryption
     # with open('test.txt', 'r+') as f:

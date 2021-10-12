@@ -1,5 +1,5 @@
-from bigmod import *
-from xeuclidean import *
+from lib.bigmod import BigMod
+from lib.xeuclidean import XEuclidean
 
 class RSA:
   def generate(self, p, q):

@@ -1,6 +1,6 @@
-from bigmod import BigMod
-from xeuclidean import XEuclidean
-from generator import GroupGenerator
+from lib.bigmod import BigMod
+from lib.xeuclidean import XEuclidean
+from lib.groupgenerator import GroupGenerator
 import random
 
 class Elgamal:
