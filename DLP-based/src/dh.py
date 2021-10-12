@@ -6,7 +6,7 @@ class DiffieHellman:
         g = GroupGenerator(p).find_random_generator()
         return (p, g)
 
-    def encrypt(sNelf):
+    def encrypt(self):
         pass
 
     def decrypt(self):
