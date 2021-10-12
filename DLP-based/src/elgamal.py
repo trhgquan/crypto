@@ -1,11 +1,11 @@
 from lib.bigmod import BigMod
 from lib.xeuclidean import XEuclidean
-from lib.groupgenerator import GroupGenerator
+from dh import DiffieHellman
 import random
 
-class Elgamal:
+class Elgamal(DiffieHellman):
     def generate_key(self, p):
-        g = GroupGenerator(p).find_random_generator()
+        p, g = super().generate_key(p)
         d = random.randrange(2, p - 1)
         e = BigMod().power(g, d, p)
         return (p, g, d, e)
@@ -20,9 +20,3 @@ class Elgamal:
     def decrypt(self, d, c1, c2, p):
         ic1 = XEuclidean().inverse_modulo(BigMod().power(c1, d, p), p)
         return self.decode([BigMod().mul(ic1, int(c), p) for c in c2.rstrip().split(' ')])
-
-    def encode(self, message):
-        return [ord(c) for c in message]
-
-    def decode(self, plain):
-        return ''.join([chr(c) for c in plain])
