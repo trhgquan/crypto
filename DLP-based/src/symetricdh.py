@@ -19,3 +19,12 @@ class SymetricDH(DiffieHellman):
     def decrypt(self, cipher, key, power, p):
         key = XEuclidean().inverse_modulo(BigMod().power(key, power, p), p)
         return self.decode([BigMod().mul(int(c), key, p) for c in cipher.rstrip().split(' ')])
+
+    # Using XOR operator - don't need inverse modulo and bigint multiply.
+    def encrypt_xor(self, message, key, power, p):
+        key = BigMod().power(key, power, p)
+        return [m ^ key for m in self.encode(message)]
+
+    def decrypt_xor(self, cipher, key, power, p):
+        key = BigMod().power(key, power, p)
+        return self.decode([(int(c) ^ key) for c in cipher.rstrip().split(' ')])
