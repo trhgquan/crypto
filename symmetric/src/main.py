@@ -8,7 +8,14 @@ def main():
     print('message')
     print(message)
 
-
+    '''
+    n = 10 -> dimensions of a square matrix.
+    This also means we'll split the message into chunks of 10.
+    (for matrix multiplication)
+    
+    p = 2 -> Since we're doing in binary.
+    If there is an alphabet, this should be replaced by a prime.
+    '''
     mc = MatrixCipher(10, 2)
 
     cipher = mc.encrypt(message)
@@ -30,5 +37,4 @@ if __name__ == '__main__':
     
     main()
 
-    print('Execute time: %s seconds' % (time.time() - start_time)
-)
+    print('Execute time: %s seconds' % (time.time() - start_time))
