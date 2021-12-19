@@ -8,6 +8,8 @@ Cài đặt thuật & tóm tắt lí thuyết.
 3. Symmetric cryptosystems.
   - Matrix cipher
 4. Applied cryptography.
-  - Hash function
+  - Hash function.
+  - Bảo mật cơ sở dữ liệu.
+  - Chia sẻ bí mật.
 
 VNUHCM - US, mùa Thu năm 2021.
