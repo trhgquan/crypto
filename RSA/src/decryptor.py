@@ -34,6 +34,7 @@ def main(argv):
     
     with open(output_file, 'w+') as f:
         print(RSA.decrypt(cipher, d, n), file = f)
+        print('Result are in {0}'.format(output_file))
 
 if __name__ == '__main__':
   main(sys.argv[1:])
