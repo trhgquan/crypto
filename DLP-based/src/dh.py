@@ -1,19 +1,40 @@
 from lib.groupgenerator import GroupGenerator
-import random
 
 class DiffieHellman:
-    def generate_key(self, p):
+    @staticmethod
+    def generate_key(p : int) -> tuple:
+        '''Generate a random group generator
+
+        Input:
+            - p : int
+        
+        Output:
+            - p : original (Z_p)
+            - g : generator of (Z_p)
+        '''
         g = GroupGenerator(p).find_random_generator()
         return (p, g)
 
-    def encrypt(self):
-        pass
+    @staticmethod
+    def encode(message : str) -> list:
+        '''Encode a message from text to plaintext
 
-    def decrypt(self):
-        pass
-
-    def encode(self, message):
+        Input:
+            - message : str
+        
+        Output:
+            - list of integer plaintext
+        '''
         return [ord(c) for c in message]
 
-    def decode(self, plain):
+    @staticmethod
+    def decode(plain : list) -> str:
+        '''Convert plaintext to message
+
+        Input:
+            - plain : plaintext in string
+        
+        Output:
+            - message string.
+        '''
         return ''.join([chr(c) for c in plain])
