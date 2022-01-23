@@ -1,4 +1,4 @@
-from RSA import *
+from RSA import RSA
 import sys, getopt
 
 def main(argv):
@@ -41,4 +41,4 @@ def main(argv):
         print('Result are in {0}'.format(output_file))
 
 if __name__ == '__main__':
-  main(sys.argv[1:])
+    main(sys.argv[1:])
