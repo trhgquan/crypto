@@ -1,60 +1,69 @@
 class BigMod:
-	@staticmethod
-	def add(x: int, y: int, n: int) -> int:
-		'''(x + y) % n'''
-		return (x + y) % n
+    @staticmethod
+    def add(x: int, y: int, n: int) -> int:
+        '''(x + y) % n
 
-	@staticmethod
-	def mul(x : int, y : int, n : int) -> int:
-		'''Quick multiply, then modulo n
+        Input:
+            - x : int
+            - y : int
+            - n : int
+        
+        Output:
+            - int
+        '''
+        return (x + y) % n
 
-		Input:
-			- x : int
-			- y : int
-			- n : int
-		
-		Output:
-			- int
-		'''
-		p = 0
+    @staticmethod
+    def mul(x : int, y : int, n : int) -> int:
+        '''Quick multiply, then modulo n
 
-		x = x % n
+        Input:
+            - x : int
+            - y : int
+            - n : int
+        
+        Output:
+            - int
+        '''
+        p = 0
 
-		while y > 0:
-			if y & 1:
-				p = BigMod.add(p, x, n)
+        x = x % n
 
-			x = (x << 1) % n
+        while y > 0:
+            if y & 1:
+                p = BigMod.add(p, x, n)
 
-			y = y >> 1
+            x = (x << 1) % n
 
-		return p
+            y = y >> 1
 
-	@staticmethod
-	def power(x : int, p : int, n : int) -> int:
-		'''Quick power x^p, modular n
+        return p
 
-		Input:
-			- x : int
-			- p : int
-			- n : int
-		
-		Output:
-			- int
-		'''
-		y = 1
+    @staticmethod
+    def power(x : int, p : int, n : int) -> int:
+        '''Quick power x^p, modular n
 
-		x = x % n
+        Input:
+            - x : int
+            - p : int
+            - n : int
+        
+        Output:
+            - int
+        '''
+        y = 1
 
-		if p == 0:
-			return y
+        x = x % n
 
-		while p > 0:
-			if p & 1:
-				y = BigMod.mul(y, x, n)
+        if p == 0:
+            return y
 
-			p = p >> 1
+        while p > 0:
+            if p & 1:
+                y = BigMod.mul(y, x, n)
 
-			x = BigMod.mul(x, x, n)
+            p = p >> 1
 
-		return y
+            x = BigMod.mul(x, x, n)
+
+        return y
