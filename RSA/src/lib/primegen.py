@@ -21,8 +21,8 @@ class PrimeGen:
 
         print('Testing {0} (k = {1})'.format(p2, k1))
         for a1 in range(2, p2 + 1, self.__collision):
-          power_mod = BigMod().power(a1, k1 * p1, p2)
-          extended_gcd = XEuclidean().extended_gcd(a1**k1 + 1, p2)[0]
+          power_mod = BigMod.power(a1, k1 * p1, p2)
+          extended_gcd = XEuclidean.extended_gcd(a1**k1 + 1, p2)[0]
 
           if power_mod == p2 - 1 and extended_gcd == 1:
             print(p2, ' valid')
