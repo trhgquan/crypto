@@ -1,5 +1,5 @@
-from lib.bigmod import BigMod
-from lib.xeuclidean import XEuclidean
+from bigmod import BigMod
+from xeuclidean import XEuclidean
 
 class PrimeGen:
   def __init__(self, seed, collision = 1):

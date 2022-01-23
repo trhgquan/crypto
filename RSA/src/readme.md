@@ -1,6 +1,5 @@
 # Demo RSA source code
 ## Generator
----
 Generate a pair of (n, e, d):
 ```
 python generator.py --p=<first prime> --q=<second prime>
@@ -34,4 +33,10 @@ Example:
 ```console
 python decryptor.py --n=26069 --d=12083 --input=encrypted.txt --output=decrypted.txt
 Result are in decrypted.txt
+```
+
+## Prime generator
+Usage:
+```
+PrimeGen(seed = <prime seed>).create(<expected length>)
 ```
