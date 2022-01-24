@@ -1,4 +1,9 @@
 # Demo RSA source code
+## Installation
+```
+pip install -r requirements.txt
+```
+
 ## Generator
 Generate a pair of (n, e, d):
 ```

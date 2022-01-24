@@ -1,4 +1,9 @@
 # Demo DLP-based source code
+## Installation
+```
+pip install -r requirementst.txt
+```
+
 ## Symmetric
 ### Key generator
 ```
