@@ -9,17 +9,18 @@ class MatrixCipher:
         self.__p = p
 
         self.__encryption_key, self.__decryption_key = [], []
-        for i in range(0, self.__n):
+        for _ in range(0, self.__n):
             e, d = self.keygen()
             self.__encryption_key.append(e)
             self.__decryption_key.append(d)
 
-    '''
-    Generate key
-    '''
-    def keygen(self):
+    def keygen(self) -> tuple:
         '''
         Generate an upper-triangular matrix with determinant != 0
+
+        Output:
+            - encryption_key : encryption matrix
+            - decryption_key : decryption matrix
         '''
 
         u_seed = np.random.randint(self.__p, size = (self.__n, self.__n))
@@ -50,34 +51,39 @@ class MatrixCipher:
         bases = np.matlib.identity(self.__n)
 
         y = []
-        y.append(bases[:, 0] * XEuclidean().inverse_modulo(l[0, 0], self.__p))
+        y.append(bases[:, 0] * XEuclidean.inverse_modulo(l[0, 0], self.__p))
         for i in range(1, self.__n):
             sum_ = 0
             for j in range(0, i):
                 sum_ += (y[j] * l[i, j]) % self.__p
             sum_ %= self.__p
-            y.append(np.array(((bases[:, i] - sum_) * XEuclidean().inverse_modulo(l[i, i], self.__p)) % self.__p))
+            y.append(np.array(((bases[:, i] - sum_) * XEuclidean.inverse_modulo(l[i, i], self.__p)) % self.__p))
 
         y = np.matrix(np.column_stack(y)).transpose()
 
         x = [0] * self.__n
-        x[self.__n - 1] = y[self.__n - 1, :] * XEuclidean().inverse_modulo(u[self.__n - 1, self.__n - 1], self.__p)
+        x[self.__n - 1] = y[self.__n - 1, :] * XEuclidean.inverse_modulo(u[self.__n - 1, self.__n - 1], self.__p)
         for i in range(self.__n - 2, -1, -1):
             sum_= 0
             for j in range(i + 1, self.__n):
                 sum_ += (x[j] * u[i, j]) % self.__p
             sum_ %= self.__p
 
-            x[i] = np.array(((y[i, :] - sum_) * XEuclidean().inverse_modulo(u[i, i], self.__p)) % self.__p)
+            x[i] = np.array(((y[i, :] - sum_) * XEuclidean.inverse_modulo(u[i, i], self.__p)) % self.__p)
 
         decryption_key = np.matrix(np.reshape(x, (self.__n, self.__n)))
 
         return encryption_key, decryption_key
 
-    '''
-    Convert message to nx1 matrices (calculatable format)
-    '''
-    def chunks(self, message):
+    def chunks(self, message : str) -> list:
+        '''Convert message to chunks
+
+        Input:
+            - message : string message
+        
+        Output:
+            - list of chunks (nx1 matrices)
+        '''
         list_messages = (message[0 + i:self.__n + i] for i in range(0, len(message), self.__n))
 
         list_calculatable = []
@@ -88,11 +94,15 @@ class MatrixCipher:
 
         return list_calculatable
 
+    def encrypt(self, message : str) -> str:
+        '''Encrypt a message
 
-    '''
-    Encrypt message
-    '''
-    def encrypt(self, message):
+        Input:
+            - message : str
+        
+        Output:
+            - cipher string
+        '''
         cipher, cipher_temp = '', []
         message = self.chunks(message)
 
@@ -107,10 +117,15 @@ class MatrixCipher:
         
         return cipher
 
-    '''
-    Decrypt message
-    '''
-    def decrypt(self, cipher):
+    def decrypt(self, cipher : str) -> str:
+        '''Decrypt a message
+
+        Input:
+            - cipher : string
+        
+        Output:
+            - plaintext string
+        '''
         message, message_temp = '', []
         cipher = self.chunks(cipher)
 
@@ -124,8 +139,18 @@ class MatrixCipher:
         
         return message
 
-    def encryption_key(self):
+    def encryption_key(self) -> list:
+        '''Encryption key getter
+
+        Output:
+            - encryption key
+        '''
         return self.__encryption_key
 
-    def decryption_key(self):
+    def decryption_key(self) -> list:
+        '''Decryption key getter
+
+        Output:
+            - Decryption key
+        '''
         return self.__decryption_key

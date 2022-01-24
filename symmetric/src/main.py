@@ -37,4 +37,4 @@ if __name__ == '__main__':
     
     main()
 
-    print('Execute time: %s seconds' % (time.time() - start_time))
+    print('Execution time: %s seconds' % (time.time() - start_time))

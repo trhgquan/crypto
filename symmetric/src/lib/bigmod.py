@@ -1,34 +1,69 @@
 class BigMod:
-  def add(self, x, y, n):
-    return (x + y) % n
+    @staticmethod
+    def add(x: int, y: int, n: int) -> int:
+        '''(x + y) % n
 
-  def mul(self, x, y, n):
-    p = 0
+        Input:
+            - x : int
+            - y : int
+            - n : int
+        
+        Output:
+            - int
+        '''
+        return (x + y) % n
 
-    x = x % n
+    @staticmethod
+    def mul(x : int, y : int, n : int) -> int:
+        '''Quick multiply, then modulo n
 
-    while y > 0:
-      if y & 1:
-        p = self.add(p, x, n)
+        Input:
+            - x : int
+            - y : int
+            - n : int
+        
+        Output:
+            - int
+        '''
+        p = 0
 
-      x = (x << 1) % n
+        x = x % n
 
-      y = y >> 1
+        while y > 0:
+            if y & 1:
+                p = BigMod.add(p, x, n)
 
-    return p
+            x = (x << 1) % n
 
-  def power(self, x, p, n):
-    y = 1
+            y = y >> 1
 
-    x = x % n
+        return p
 
-    if p == 0: return y
+    @staticmethod
+    def power(x : int, p : int, n : int) -> int:
+        '''Quick power x^p, modular n
 
-    while p > 0:
-      if p & 1: y = self.mul(y, x, n)
+        Input:
+            - x : int
+            - p : int
+            - n : int
+        
+        Output:
+            - int
+        '''
+        y = 1
 
-      p = p >> 1
+        x = x % n
 
-      x = self.mul(x, x, n)
+        if p == 0:
+            return y
 
-    return y
+        while p > 0:
+            if p & 1:
+                y = BigMod.mul(y, x, n)
+
+            p = p >> 1
+
+            x = BigMod.mul(x, x, n)
+
+        return y
