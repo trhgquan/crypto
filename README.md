@@ -12,4 +12,7 @@ Cài đặt thuật & tóm tắt lí thuyết.
     - Bảo mật cơ sở dữ liệu.
     - Chia sẻ bí mật.
 
+## LICENSE
+This project is licensed under the terms of [The GNU GPL v3.0 License](LICENSE)
+
 VNUHCM - US, mùa Thu năm 2021.
