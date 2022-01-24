@@ -31,7 +31,7 @@ python verify.py --input_file=<file to verify> --input_signature=<signature file
 ```
 
 Example:
-```
+```console
 python verify.py --input_file=requirements.txt --input_signature=signature.txt --public=10007977 --n=68449547    
 File digest: 7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6
 File original digest: 7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6
