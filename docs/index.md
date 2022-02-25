@@ -18,14 +18,14 @@ Cài đặt thuật & tóm tắt lí thuyết.
 
 ### Symmetric cryptosystems [(xem online)](https://trhgquan.github.io/CS155/symmetric-crypto).
 - Các mode của symmetric crypto.
-- Matrix cipher.
+- Matrix cipher (Mã Ma trận, ví dụ với Hill Cipher).
 
 ### Applied cryptography [(xem online)](https://trhgquan.github.io/CS155/applied-cryptography).
 - Hash function (Hàm băm mật mã).
 - Chữ ký điện tử (Sử dụng RSA).
 - Zero-knowledge (Tri thức trị không)
-- Hệ bảo mật thông tin - Bảo mật cơ sở dữ liệu.
-- Chia sẻ bí mật: đa thức nội suy Lagrange bài toán ngưỡng.
+- Hệ bảo mật thông tin: Bảo mật cơ sở dữ liệu.
+- Chia sẻ bí mật: đa thức nội suy Lagrange, bài toán ngưỡng.
 
 ## LICENSE
 This project is licensed under the terms of [The GNU GPL v3.0 License](LICENSE)

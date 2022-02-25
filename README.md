@@ -18,7 +18,7 @@ Cài đặt thuật & tóm tắt lí thuyết.
 
 ### Symmetric cryptosystems [(xem online)](https://trhgquan.github.io/CS155/symmetric-crypto).
 - Các mode của symmetric crypto.
-- Matrix cipher.
+- Matrix cipher (Mã Ma trận, ví dụ với Hill Cipher).
 
 ### Applied cryptography [(xem online)](https://trhgquan.github.io/CS155/applied-cryptography).
 - Hash function (Hàm băm mật mã).

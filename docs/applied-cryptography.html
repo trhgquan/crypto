@@ -14590,6 +14590,13 @@ Văn bản gốc $M$, $C$ có $e, d$ (RSA), $A$ có khóa $k$ bí mật.</li>
 </li>
 <li>Mọi người đều có thể kiểm tra: so sánh $h(M) = RSA(e, s)$ </li>
 </ul>
+<h3 id="Ph%C3%A2n-t%C3%ADch-h%C3%A0m-b%C4%83m-m%E1%BA%ADt-m%C3%A3">Ph&#226;n t&#237;ch h&#224;m b&#259;m m&#7853;t m&#227;<a class="anchor-link" href="#Ph%C3%A2n-t%C3%ADch-h%C3%A0m-b%C4%83m-m%E1%BA%ADt-m%C3%A3">&#182;</a></h3><p>Cho $P$, tìm đụng độ $P'$:</p>
+<ol>
+<li>Tạo bảng $t = 2^{\frac{n}{2}}$ biến thể của $P: P_1, P_2, ..$</li>
+<li>Lặp: $\forall i \in t:$ chèn $(P_i, h(P_i))$ vào $t$.</li>
+<li>Tạo $P'$, tra trong $t$.</li>
+</ol>
+<p>Kháng: cho $n \geq 80k, (k &gt; 1)$</p>
 
 </div>
 </div>
@@ -14617,13 +14624,6 @@ Văn bản gốc $M$, $C$ có $e, d$ (RSA), $A$ có khóa $k$ bí mật.</li>
 <li>Nếu $h' = h$, document $m$ được gửi đi toàn vẹn, không bị chỉnh sửa, đúng người ký.</li>
 </ul>
 <p>Cài đặt trong thư mục <code>src</code>.</p>
-<h3 id="Ph%C3%A2n-t%C3%ADch-h%C3%A0m-b%C4%83m-m%E1%BA%ADt-m%C3%A3">Ph&#226;n t&#237;ch h&#224;m b&#259;m m&#7853;t m&#227;<a class="anchor-link" href="#Ph%C3%A2n-t%C3%ADch-h%C3%A0m-b%C4%83m-m%E1%BA%ADt-m%C3%A3">&#182;</a></h3><p>Cho $P$, tìm đụng độ $P'$:</p>
-<ol>
-<li>Tạo bảng $t = 2^{\frac{n}{2}}$ biến thể của $P: P_1, P_2, ..$</li>
-<li>Lặp: $\forall i \in t:$ chèn $(P_i, h(P_i))$ vào $t$.</li>
-<li>Tạo $P'$, tra trong $t$.</li>
-</ol>
-<p>Kháng: cho $n \geq 80k, (k &gt; 1)$</p>
 <h3 id="DSA-(Digital-Signature-Algorithm)---DSS-(Digital-Signature-Standard)">DSA (Digital Signature Algorithm) - DSS (Digital Signature Standard)<a class="anchor-link" href="#DSA-(Digital-Signature-Algorithm)---DSS-(Digital-Signature-Standard)">&#182;</a></h3><p><strong>Quan trọng</strong>: Ký cần nhanh, verify không cần nhanh. Giải mã nhanh có cách (CRT).</p>
 <ol>
 <li>Các tham số:<ul>
