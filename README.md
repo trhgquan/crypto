@@ -25,7 +25,7 @@ Cài đặt thuật & tóm tắt lí thuyết.
 - Chữ ký điện tử (Sử dụng RSA).
 - Zero-knowledge (Tri thức trị không)
 - Hệ bảo mật thông tin - Bảo mật cơ sở dữ liệu.
-- Chia sẻ bí mật: đa thức nội suy Lagrange bài toán ngưỡng.
+- Chia sẻ bí mật: đa thức nội suy Lagrange, bài toán ngưỡng.
 
 ## LICENSE
 This project is licensed under the terms of [The GNU GPL v3.0 License](LICENSE)
