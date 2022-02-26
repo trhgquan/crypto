@@ -20,7 +20,7 @@ Cho $g \in G \equiv \mathbb{Z}^{*}_p, x \in \mathbb{Z}, y \equiv g^x \pmod{p}$. 
 
 ## 2. Phần tử sinh của nhóm
 <span>
-Ví dụ: Xét nhóm $\left(\mathbb{Z}^{*}_7, \cdot_7\right)$ (tạm hiểu $\cdot_7$ là phép mũ $7^x\ \forall x \in \mathbb{Z}^{*}_7$)
+Ví dụ: Xét nhóm $\left(\mathbb{Z}^{\*}_7, \cdot_7\right)$ (tạm hiểu $\cdot_7$ là phép mũ $7^x\ \forall x \in \mathbb{Z}^{\*}_7$)
 </span>
 
 Với $2 \in \mathbb{Z}^{*}_7$, tập các giá trị có thể có là $\{1, 2, 4\}$:
