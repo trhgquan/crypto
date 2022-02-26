@@ -53,11 +53,11 @@ Kết quả là $Y = y_1..y_t$
 3. Chữ ký điện tử (Digital Signature)
 Văn bản gốc $M$, $C$ có $e, d$ (RSA), $A$ có khóa $k$ bí mật.
 
-- Với $A$: tạo mã chứng thực <span>$a = MAC(M || k)$</span>.
+- Với $A$: tạo mã chứng thực <span>$a = \text{MAC}(M || k)$</span>.
 - Với $C$: 
     - Nén M thành u: $u = h(M)$.
-    - Chữ ký của người công chứng: $s = RSA(d, u)$
-- Mọi người đều có thể kiểm tra: so sánh $h(M) = RSA(e, s)$ 
+    - Chữ ký của người công chứng: $s = \text{RSA}(d, u)$
+- Mọi người đều có thể kiểm tra: so sánh $h(M) = \text{RSA}(e, s)$ 
 
 ### Phân tích hàm băm mật mã
 Cho $P$, tìm đụng độ $P'$:
