@@ -19,7 +19,7 @@ $G$ là nhóm giao hoán (Nhóm Abel) nếu thỏa thêm điều kiện
 Cho $g \in G \equiv \mathbb{Z}^{*}_p, x \in \mathbb{Z}, y \equiv g^x \pmod{p}$. Khi đó bài toán tìm $x$ là một bài toán DLP.
 
 ## 2. Phần tử sinh của nhóm
-Ví dụ: Xét nhóm $\left(\mathbb{Z}^{*}_{7}, \cdot_{7}\right)$ (tạm hiểu $\cdot_{7}$ là phép mũ $7^x\ \forall x \in \mathbb{Z}^{*}_{7}$)
+Ví dụ: Xét nhóm $\left(\mathbb{Z}^{*}\_{7}, \cdot_{7}\right)$ (tạm hiểu $\cdot_{7}$ là phép mũ $7^x\ \forall x \in \mathbb{Z}^{*}_{7}$)
 
 Với $2 \in \mathbb{Z}^{*}_7$, tập các giá trị có thể có là $\{1, 2, 4\}$:
 - $2^0 \equiv 1 \pmod 7$
