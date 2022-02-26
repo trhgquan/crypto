@@ -19,7 +19,9 @@ $G$ là nhóm giao hoán (Nhóm Abel) nếu thỏa thêm điều kiện
 Cho $g \in G \equiv \mathbb{Z}^{*}_p, x \in \mathbb{Z}, y \equiv g^x \pmod{p}$. Khi đó bài toán tìm $x$ là một bài toán DLP.
 
 ## 2. Phần tử sinh của nhóm
-Ví dụ: Xét nhóm $\left(\mathbb{Z}^{*}\_{7}, \cdot_{7}\right)$ (tạm hiểu $\cdot_{7}$ là phép mũ $7^x\ \forall x \in \mathbb{Z}^{*}_{7}$)
+<span>
+Ví dụ: Xét nhóm $\left(\mathbb{Z}^{*}_7, \cdot_7\right)$ (tạm hiểu $\cdot_7$ là phép mũ $7^x\ \forall x \in \mathbb{Z}^{*}_7$)
+</span>
 
 Với $2 \in \mathbb{Z}^{*}_7$, tập các giá trị có thể có là $\{1, 2, 4\}$:
 - $2^0 \equiv 1 \pmod 7$
@@ -30,7 +32,9 @@ Với $2 \in \mathbb{Z}^{*}_7$, tập các giá trị có thể có là $\{1, 2,
 
 Với 3 thì khác, tập giá trị có thể có là $\{1, .., 6\}$. 
 
+<span>
 Gọi $\text{ord}\left(g\right)$ là bậc của $g \in G$. Đặt $\left|G\right| = n$, nếu $\text{ord}\left(g\right) = n - 1$ thì $g$ là một phần tử sinh của $G$.
+</span>
 
 Thuật toán phía dưới tìm nhanh các phần tử sinh của $n$.
 
