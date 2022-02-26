@@ -4,11 +4,14 @@
 Cho $G \neq \emptyset$, định nghĩa phép toán $\cdot: G \times G \rightarrow G$
 
 $(G, \cdot)$ là một nhóm (Group) nếu:
-1. $\exists e \in G: e\cdot a = a\cdot e = a, \forall a \in G$
-2. $\exists a, e \in G: \exists a^{-1} \in G: a \cdot a^{-1} = a^{-1} \cdot a = e$
-3. $\forall a, b, c \in G: (a \cdot b) \cdot c = a \cdot (b \cdot c)$
+
+0. Tiên đề đóng: $\forall a, b \in G: a\cdot b \in G$
+1. $G$ có phần tử đơn vị: $\exists e \in G: e\cdot a = a\cdot e = a, \forall a \in G$
+2. $G$ có phần tử nghịch đảo: $\exists a, e \in G: \exists a^{-1} \in G: a \cdot a^{-1} = a^{-1} \cdot a = e$
+3. $G$ có tính kết hợp: $\forall a, b, c \in G: (a \cdot b) \cdot c = a \cdot (b \cdot c)$
 
 $G$ là nhóm giao hoán (Nhóm Abel) nếu thỏa thêm điều kiện
+
 4. $\forall a, b \in G: a\cdot b = b\cdot a$
 
 
@@ -16,7 +19,7 @@ $G$ là nhóm giao hoán (Nhóm Abel) nếu thỏa thêm điều kiện
 Cho $g \in G \equiv \mathbb{Z}^{*}_p, x \in \mathbb{Z}, y \equiv g^x \pmod{p}$. Khi đó bài toán tìm $x$ là một bài toán DLP.
 
 ## 2. Phần tử sinh của nhóm
-Ví dụ: Xét nhóm $(\mathbb{Z}^{*}_7, \cdot_7)$ (tạm hiểu $\cdot_7$ là phép mũ $7^x \forall x \in \mathbb{Z}^{*}_7$)
+Ví dụ: Xét nhóm $\left(\mathbb{Z}^{*}_7, \cdot_7\right)$ (tạm hiểu $\cdot_7$ là phép mũ $7^x\ \forall x \in \mathbb{Z}^{*}_7$)
 
 Với $2 \in \mathbb{Z}^{*}_7$, tập các giá trị có thể có là $\{1, 2, 4\}$:
 - $2^0 \equiv 1 \pmod 7$
@@ -27,7 +30,7 @@ Với $2 \in \mathbb{Z}^{*}_7$, tập các giá trị có thể có là $\{1, 2,
 
 Với 3 thì khác, tập giá trị có thể có là $\{1, .., 6\}$. 
 
-Gọi $\text{Ord}(g)$ là bậc của $g \in G$. Đặt $|G| = n$, nếu $\text{Ord}(g) = n - 1$ thì $g$ là một phần tử sinh của $G$.
+Gọi $\text{ord}\left(g\right)$ là bậc của $g \in G$. Đặt $|G| = n$, nếu $\text{ord}\left(g\right) = n - 1$ thì $g$ là một phần tử sinh của $G$.
 
 Thuật toán phía dưới tìm nhanh các phần tử sinh của $n$.
 
@@ -80,6 +83,9 @@ Thuật toán trình bày bên dưới.
 import random
 from functools import reduce
 
+# For consistent output
+random.seed(42)
+
 def factors(n):
     return set(reduce(list.__add__,
                 ([i, n//i] for i in range(1, int(n**0.5) + 1) if n % i == 0)))
@@ -102,8 +108,8 @@ print(find_random_generator(17))
 ```
 
     2
-    11
-    11
+    6
+    5
     
 
 ## Key Exchange Protocol (Diffie - Hellman)
