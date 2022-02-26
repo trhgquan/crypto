@@ -48,12 +48,12 @@ Kết quả là $Y = y_1..y_t$
 
 2. Mã chứng thực văn bản (MAC - Message Authentication Code)
 - Bảo vệ tính toàn vẹn của văn bản.
-    - VD: Cho document $M, c = h(M || k)$ (ghép $k$ là khóa bí mật của người chủ văn bản vào $M$)
+    - VD: Cho document <span>$M, c = h(M || k)$</span> (ghép $k$ là khóa bí mật của người chủ văn bản vào $M$)
 
 3. Chữ ký điện tử (Digital Signature)
 Văn bản gốc $M$, $C$ có $e, d$ (RSA), $A$ có khóa $k$ bí mật.
 
-- Với $A$: tạo mã chứng thực $a = MAC(M || k)$.
+- Với $A$: tạo mã chứng thực <span>$a = MAC(M || k)$</span>.
 - Với $C$: 
     - Nén M thành u: $u = h(M)$.
     - Chữ ký của người công chứng: $s = RSA(d, u)$

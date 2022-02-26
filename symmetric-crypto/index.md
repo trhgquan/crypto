@@ -69,7 +69,7 @@ Giải mã: làm ngược lại
 ## Nguyên tắc thiết kế hàm mã
 
 - (R1) Thay thế: $b_0..b_l \xrightarrow{\text{sub (thay thế)}}b'_0..b'_l$
-- (R2) Hoán vị: $b_0..b_l \xrightarrow{\text{per (hoán vị)}}b'_0..b'_l: b_i = b'_{\sigma(i)}$
+- (R2) Hoán vị: <span>$b_0..b_l \xrightarrow{\text{per (hoán vị)}}b'_0..b'_l: b_i = b'_{\sigma(i)}$</span>
 
 ## Matrix Cipher
 ### Hill Cipher
