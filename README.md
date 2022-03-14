@@ -30,7 +30,17 @@ Cài đặt thuật & tóm tắt lí thuyết các môn học
 - Chia sẻ bí mật: đa thức nội suy Lagrange, bài toán ngưỡng.
 
 ### CSC15003 - Mã hóa ứng dụng
-(Spring 2022 goes here)
+
+#### [CSC15003/W02-cryptosystem](CSC15003/W02-cryptosystem)
+- Giới thiệu sơ nét về hệ thống mã hóa
+- So sánh hệ mã đối xứng (symmetric cryptosystem) và bất đối xứng (asymmetric cryptosystem).
+- Giới thiệu sơ nét vành Zm
+
+#### [CSC15003/W03-symmetric-cryptosystem](CSC15003/W03-symmetric-cryptosystem)
+- Bàn về các phương pháp mã hóa đối xứng tiêu biểu.
+
+#### [CSC15003/W04-shannon-theory](CSC15003/W04-shannon-theory)
+- Bàn sơ lược về Lý thuyết Shannon.
 
 ## LICENSE
 This project is licensed under the terms of [The GNU GPL v3.0 License](LICENSE)
