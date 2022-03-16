@@ -42,7 +42,7 @@ Tính chất:
 - Brute-force với $k \in \mathcal{K}$ là không khả thi.
 - Tấn công bằng cách khác: frequency analysis
 
-(Ngoài lề): vene vidi vici - I came, I saw, I conquered
+(Ngoài lề): veni vidi vici - I came, I saw, I conquered
 
 ## Phương pháp Affine
 

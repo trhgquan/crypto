@@ -6,34 +6,34 @@ Hay là lý thuyết về độ an toàn thông tin
 
 Gọi $P(X = x)$ là xác suất biến ngẫu nhiên $X$ nhận giá trị $x$, $P(Y = y)$ là xác suất biến ngẫu nhiên $Y$ nhận giá trị $y$.
 
-Xác suất có điều kiện $P(x | y)$ là xác suất $X = x$ khi đã biết $Y = y$.
+Xác suất có điều kiện <span>$P(x | y)$</span> là xác suất $X = x$ khi đã biết $Y = y$.
 
 Xác suất $P(x, y)$ là xác suất $X = x$ và $Y = y$.
 
 Ta có:
 - $X$ và $Y$ là hai biến ngẫu nhiên độc lập khi $P(x, y) = P(x)P(y)$
-- Định lý Bayes: $\displaystyle P(x | y) = \frac{P(y | x)P(x)}{P(y)}$. Chú ý ta sẽ gọi $P(x)$ là a priori (tiên nghiệm) và $P(x | y)$ là a posteriori (hậu nghiệm). Cũng từ đây có thể suy ra rằng $X$ và $Y$ độc lập nếu $P(x | y) = P(x)$.
+- Định lý Bayes: <span>$\displaystyle P(x | y) = \frac{P(y | x)P(x)}{P(y)}$</span>. Chú ý ta sẽ gọi $P(x)$ là a priori (tiên nghiệm) và <span>$P(x | y)$<span> là a posteriori (hậu nghiệm). Cũng từ đây có thể suy ra rằng $X$ và $Y$ độc lập nếu <span>$P(x | y) = P(x)$</span>.
 
 ## An toàn tuyệt đối (Perfect Security)
 $\forall x \in \mathcal{P}$ là tập plaintext, $\forall k \in \mathcal{K}$ là tập khóa. Gọi 
-- $P_{\mathcal{P}}(x | c)$ là xác suất plaintext là $x$ khi ciphertext là $c$
+- <span>$P_{\mathcal{P}}(x | c)$</span> là xác suất plaintext là $x$ khi ciphertext là $c$
 - $P_{\mathcal{P}}(x)$ là xác suất plaintext là $x$
-- $P_{\mathcal{K}}(k | c)$ là xác suất khóa mã là $k$ khi ciphertext là $c$
+- <span>$P_{\mathcal{K}}(k | c)$</span> là xác suất khóa mã là $k$ khi ciphertext là $c$
 - $P_{\mathcal{K}}(k)$ là xác suất khóa mã là $k$
 
 
 Một hệ mã đạt chuẩn an toàn tuyệt đối khi đối với plaintext và khóa, xác suất hậu nghiệm bằng xác suất tiên nghiệm. Hay,
 $\forall x \in \mathcal{P}, \forall k \in \mathcal{K}$:
-- $P_{\mathcal{P}}(x | c) = P_{\mathcal{P}}(x)$
-- $P_{\mathcal{K}}(k | c) = P_{\mathcal{K}}(k)$
+- <span>$P_{\mathcal{P}}(x | c) = P_{\mathcal{P}}(x)$</span>
+- <span>$P_{\mathcal{K}}(k | c) = P_{\mathcal{K}}(k)$</span>
 
-Phát biểu ngắn: hệ mã đạt an toàn tuyệt đối khi $|\mathcal{K}| = |\mathcal{P}|$
+Phát biểu ngắn: hệ mã đạt an toàn tuyệt đối khi <span>$|\mathcal{K}| = |\mathcal{P}|$</span>
 
 ## Định lý Shannon
 
 Cho hệ $(\mathcal{P}, \mathcal{K}, \mathcal{C}, \mathcal{E}, \mathcal{D})$,
 - $\forall c \in \mathcal{C}, \exists k \in \mathcal{K}: e_k(x) = c$
-- $\displaystyle \forall k \in \mathcal{K}, P_{\mathcal{K}}(k) = \frac{1}{|\mathcal{K}|}$
+- <span>$\displaystyle \forall k \in \mathcal{K}, P_{\mathcal{K}}(k) = \frac{1}{|\mathcal{K}|}$</span>
 
 ## Vernam Cipher
 Khóa là dãy giá trị random đủ dài, thuật toán mã hóa như sau:
