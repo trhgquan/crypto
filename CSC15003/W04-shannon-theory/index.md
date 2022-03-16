@@ -12,7 +12,7 @@ Xác suất $P(x, y)$ là xác suất $X = x$ và $Y = y$.
 
 Ta có:
 - $X$ và $Y$ là hai biến ngẫu nhiên độc lập khi $P(x, y) = P(x)P(y)$
-- Định lý Bayes: <span>$\displaystyle P(x | y) = \frac{P(y | x)P(x)}{P(y)}$</span>. Chú ý ta sẽ gọi $P(x)$ là a priori (tiên nghiệm) và <span>$P(x | y)$<span> là a posteriori (hậu nghiệm). Cũng từ đây có thể suy ra rằng $X$ và $Y$ độc lập nếu <span>$P(x | y) = P(x)$</span>.
+- Định lý Bayes: <span>$\displaystyle P(x | y) = \frac{P(y | x)P(x)}{P(y)}$</span>. Chú ý ta sẽ gọi $P(x)$ là a priori (tiên nghiệm) và <span>$P(x | y)$</span> là a posteriori (hậu nghiệm). Cũng từ đây có thể suy ra rằng $X$ và $Y$ độc lập nếu <span>$P(x | y) = P(x)$</span>.
 
 ## An toàn tuyệt đối (Perfect Security)
 $\forall x \in \mathcal{P}$ là tập plaintext, $\forall k \in \mathcal{K}$ là tập khóa. Gọi 
@@ -29,6 +29,8 @@ $\forall x \in \mathcal{P}, \forall k \in \mathcal{K}$:
 
 Phát biểu ngắn: hệ mã đạt an toàn tuyệt đối khi <span>$|\mathcal{K}| = |\mathcal{P}|$</span>
 
+Ý nghĩa: Kẻ tấn công không khai thác được gì từ ciphertext. 
+
 ## Định lý Shannon
 
 Cho hệ $(\mathcal{P}, \mathcal{K}, \mathcal{C}, \mathcal{E}, \mathcal{D})$,
@@ -43,6 +45,7 @@ Khóa là dãy giá trị random đủ dài, thuật toán mã hóa như sau:
 Ưu điểm:
 - Thuật toán mã hóa dễ
 - Perfect Security
+
 Nhược điểm:
 - Khóa không tái sử dụng
 - Kích thước khóa lớn (e.g mã hóa file 10GB thì kích thước khóa cũng là 10GB)
