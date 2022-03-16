@@ -50,4 +50,4 @@ Nhược điểm:
 ## Entropy
 Biểu diễn lượng thông tin mà một biến ngẫu nhiên có thể cung cấp; có thể hiểu đơn giản là độ dài bit cần thiêt để biểu diễn.
 
-$\displaystyle \text{entropy}(X) = \sum_{x \in \mathcal{X}} P(X = x)log_2(P(X = x))$
+$\displaystyle \text{entropy}(X) = \sum_{x \in \mathcal{X}} P(X = x)\log_2(P(X = x))$
