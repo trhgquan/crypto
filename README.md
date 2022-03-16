@@ -3,6 +3,8 @@ Cài đặt thuật & tóm tắt lí thuyết các môn học
 - CSC15005: Nhập môn mã hóa - mật mã
 - CSC15003: Mã hóa ứng dụng
 
+[Xem repository của site trên GitHub](https://github.com/trhgquan/crypto)
+
 ## Chủ đề
 ### CSC15005 - Nhập môn mã hóa - mật mã
 #### [CSC15005/RSA](CSC15005/RSA).
@@ -34,7 +36,7 @@ Cài đặt thuật & tóm tắt lí thuyết các môn học
 #### [CSC15003/W02-cryptosystem](CSC15003/W02-cryptosystem)
 - Giới thiệu sơ nét về hệ thống mã hóa
 - So sánh hệ mã đối xứng (symmetric cryptosystem) và bất đối xứng (asymmetric cryptosystem).
-- Giới thiệu sơ nét vành Zm
+- Giới thiệu sơ nét vành $Z_m$
 
 #### [CSC15003/W03-symmetric-cryptosystem](CSC15003/W03-symmetric-cryptosystem)
 - Bàn về các phương pháp mã hóa đối xứng tiêu biểu.
