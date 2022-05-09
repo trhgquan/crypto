@@ -44,6 +44,17 @@ Cài đặt thuật & tóm tắt lí thuyết các môn học
 #### [CSC15003/W04-shannon-theory](CSC15003/W04-shannon-theory)
 - Bàn sơ lược về Lý thuyết Shannon.
 
+
+#### [CSC15003/W06-modes-of-operation](CSC15003/W06-modes-of-operation)
+- Các modes hoạt động của mã hóa đối xứng.
+
+#### [CSC15003/W09-digital-signature](CSC15003/W09-digital-signature)
+- Bàn sơ lược về chữ ký số.
+
+#### [CSC15003/W09-hash-function](CSC15003/W09-hash-function)
+- Bàn sơ lược về hàm băm (hash function).
+
+
 ## LICENSE
 This project is licensed under the terms of [The GNU GPL v3.0 License](LICENSE)
 
