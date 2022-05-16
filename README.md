@@ -33,26 +33,29 @@ Cài đặt thuật & tóm tắt lí thuyết các môn học
 
 ### CSC15003 - Mã hóa ứng dụng
 
-#### [CSC15003/W02-cryptosystem](CSC15003/W02-cryptosystem)
+#### [CSC15003/cryptosystem](CSC15003/cryptosystem)
 - Giới thiệu sơ nét về hệ thống mã hóa
 - So sánh hệ mã đối xứng (symmetric cryptosystem) và bất đối xứng (asymmetric cryptosystem).
 - Giới thiệu sơ nét vành $Z_m$
 
-#### [CSC15003/W03-symmetric-cryptosystem](CSC15003/W03-symmetric-cryptosystem)
+#### [CSC15003/symmetric-cryptosystem](CSC15003/symmetric-cryptosystem)
 - Bàn về các phương pháp mã hóa đối xứng tiêu biểu.
 
-#### [CSC15003/W04-shannon-theory](CSC15003/W04-shannon-theory)
+#### [CSC15003/shannon-theory](CSC15003/shannon-theory)
 - Bàn sơ lược về Lý thuyết Shannon.
 
-#### [CSC15003/W06-modes-of-operation](CSC15003/W06-modes-of-operation)
+#### [CSC15003/modes-of-operation](CSC15003/modes-of-operation)
 - Các modes hoạt động của mã hóa đối xứng.
 
-#### [CSC15003/W09-digital-signature](CSC15003/W09-digital-signature)
+#### [CSC15003/digital-signature](CSC15003/digital-signature)
 - Bàn sơ lược về chữ ký số.
 
-#### [CSC15003/W09-hash-function](CSC15003/W09-hash-function)
+#### [CSC15003/hash-function](CSC15003/hash-function)
 - Bàn sơ lược về hàm băm (hash function).
+- Mã nguồn mẫu cài đặt MD5 bằng C++.
 
+#### [CSC15003/certificate-and-ssl](CSC15003/certificate-and-ssl)
+- Bàn sơ về certificate và SSL.
 
 ## LICENSE
 This project is licensed under the terms of [The GNU GPL v3.0 License](LICENSE)
