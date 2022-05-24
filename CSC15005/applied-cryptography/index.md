@@ -48,12 +48,12 @@ Kết quả là $Y = y_1..y_t$
 
 2. Mã chứng thực văn bản (MAC - Message Authentication Code)
 - Bảo vệ tính toàn vẹn của văn bản.
-    - VD: Cho document <span>$M, c = h(M || k)$</span> (ghép $k$ là khóa bí mật của người chủ văn bản vào $M$)
+    - VD: Cho document $M, c = h(M || k)$ (ghép $k$ là khóa bí mật của người chủ văn bản vào $M$)
 
 3. Chữ ký điện tử (Digital Signature)
 Văn bản gốc $M$, $C$ có $e, d$ (RSA), $A$ có khóa $k$ bí mật.
 
-- Với $A$: tạo mã chứng thực <span>$a = \text{MAC}(M || k)$</span>.
+- Với $A$: tạo mã chứng thực $a = \text{MAC}(M || k)$.
 - Với $C$: 
     - Nén M thành u: $u = h(M)$.
     - Chữ ký của người công chứng: $s = \text{RSA}(d, u)$
@@ -87,7 +87,7 @@ Pha kiểm chứng:
 - Người kiểm chứng giải mã $s$ thành $h'$, dùng $d, n$ với thuật toán RSA
 - Nếu $h' = h$, document $m$ được gửi đi toàn vẹn, không bị chỉnh sửa, đúng người ký.
 
-Cài đặt trong thư mục `src`.
+[Cài đặt](https://github.com/trhgquan/CS155/tree/main/DSA).
 
 ### DSA (Digital Signature Algorithm) - DSS (Digital Signature Standard)
 **Quan trọng**: Ký cần nhanh, verify không cần nhanh. Giải mã nhanh có cách (CRT).

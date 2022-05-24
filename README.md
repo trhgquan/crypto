@@ -52,10 +52,25 @@ Cài đặt thuật & tóm tắt lí thuyết các môn học
 
 #### [CSC15003/hash-function](CSC15003/hash-function)
 - Bàn sơ lược về hàm băm (hash function).
-- Mã nguồn mẫu cài đặt MD5 bằng C++.
 
 #### [CSC15003/certificate-and-ssl](CSC15003/certificate-and-ssl)
 - Bàn sơ về certificate và SSL.
+
+## Tài nguyên bổ trợ
+- [Source code CSC15003](https://github.com/trhgquan/CS153) - cài đặt bằng C++.
+    - BigInt.
+    - AES KeyExpansion.
+    - PrimeCheck sử dụng Thuật toán Miller-Rabin.
+    - MD5.
+
+- [Source code CSC15005](https://github.com/trhgquan/CS155) - cài đặt bằng Python.
+    - Symmetric Crypto: Matrix Cipher.
+    - Asymmetric Crypto: RSA, ElGamal.
+    - DLP: Diffie-Hellman (symmetric), ElGamal (asymmetric).
+    - Digital Signature: DSA.
+
+- [Đồ án cuối kỳ CSC15005](https://github.com/trhgquan/image-sharing).
+    - Cài đặt hệ thống chia sẻ ảnh an toàn, yêu cầu ảnh phải được mã hóa khi lưu trữ trên server.
 
 ## LICENSE
 This project is licensed under the terms of [The GNU GPL v3.0 License](LICENSE)

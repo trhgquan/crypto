@@ -69,7 +69,7 @@ Giải mã: làm ngược lại
 ## Nguyên tắc thiết kế hàm mã
 
 - (R1) Thay thế: $b_0..b_l \xrightarrow{\text{sub (thay thế)}}b'_0..b'_l$
-- (R2) Hoán vị: <span>$b_0..b_l \xrightarrow{\text{per (hoán vị)}}b'\_0..b'\_l: b\_i = b'\_{\sigma(i)}$</span>
+- (R2) Hoán vị: $b_0..b_l \xrightarrow{\text{per (hoán vị)}}b'_0..b'_l: b_i = b'_{\sigma(i)}$
 
 ## Matrix Cipher
 ### Hill Cipher
@@ -93,4 +93,4 @@ Cho $A_{n\times n}$ là ma trận khả nghịch $n$ dòng, $n$ cột. Với m�
 
 khi đó $X$ là nghịch đảo của $K$.
 
-Đây chỉ là tóm tắt, bản thân mỗi phần nhân ma trận lại có cách làm nhanh. Xem chi tiết trong phần src.
+Đây chỉ là tóm tắt, bản thân mỗi phần nhân ma trận lại có cách làm nhanh.
